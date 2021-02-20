@@ -97,10 +97,10 @@
 }
 
 .main__text {
-  padding-right: 20px ;
+  padding-right: 20px;
 }
 
-.main__text h2{
+.main__text h2 {
   font-size: 3em;
   line-height: 1.5;
   margin-bottom: 32px;
@@ -138,7 +138,7 @@
     font-size: 70px;
   }
 
-  .main__img{
+  .main__img {
     border-radius: 10%;
   }
 }
@@ -151,7 +151,7 @@
   .main__img {
     width: 100%;
     height: 100%;
-    border-radius:  5%;
+    border-radius: 5%;
   }
 }
 /* Services Section */
@@ -190,7 +190,7 @@
   align-items: flex-start;
 }
 
-.services__content img{
+.services__content img {
   margin-right: 50px;
 }
 
@@ -211,7 +211,7 @@
 
 .yellow__bar {
   position: absolute;
-  background-image: linear-gradient(to top, #CAC531,#F3F9A7 );
+  background-image: linear-gradient(to top, #cac531, #f3f9a7);
   height: 80px;
   bottom: -40px;
   right: 0;
@@ -281,5 +281,106 @@
 
   .yellow__bar p {
     margin-right: 20px;
+  }
+}
+/* Portiflio Section */
+.portifolio {
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: #fff;
+}
+
+.portifolio__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+}
+
+.portifolio__container h1 {
+  font-size: 7em;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  margin-bottom: 32px;
+}
+
+.portifolio__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portifolio__img {
+  width: 100%;
+  height: 100%;
+}
+
+.portifolio__right {
+  padding: 150px 100px 0 20px;
+}
+
+.portifolio__right h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+
+.portifolio__right p {
+  margin-bottom: 50px;
+  line-height: 2.5;
+}
+
+.portifolio__right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.portifolio__projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 32px 64px;
+}
+
+.portifolio__projects img {
+  padding: 0 8px;
+  width: 100%;
+  height: 100%;
+}
+/* media queries for Portifolio Section */
+@media screen and (max-width: 1386px) {
+  .portifolio__projects {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portifolio {
+    padding: 30px;
+  }
+
+  .portifolio__container h1 {
+    font-size: 4.375em;
+  }
+
+  .portifolio__main {
+    grid-template-columns: 1fr;
+  }
+
+  .portifolio__container {
+    padding-left: 0px;
+  }
+
+  .portifolio__right {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .portifolio {
+    padding: 10px;
+  }
+  .portifolio__container h1 {
+    font-size: 2.5em;
   }
 }
