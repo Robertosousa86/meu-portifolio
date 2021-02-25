@@ -200,6 +200,11 @@
   margin-bottom: 16px;
 }
 
+.services__des h2 a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .services__des p {
   line-height: 2;
 }
@@ -321,9 +326,7 @@
 .portifolio__right h2 {
   margin-bottom: 40px;
   font-size: 2em;
-  text-decoration: none;
 }
-
 
 .portifolio__right p {
   margin-bottom: 50px;
@@ -382,5 +385,124 @@
   }
   .portifolio__container h1 {
     font-size: 2.5em;
+  }
+}
+/* Contact Section */
+.contact {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+  padding: 100px 0;
+}
+
+.contact__bar {
+  background-image: linear-gradient(to top, #cac531, #f3f9a7);
+  height: 80px;
+  width: 68%;
+  color: #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact__bar img {
+  margin-right: 40px;
+}
+
+.contact__bar p {
+  margin-right: 40px;
+  font-weight: 700;
+}
+
+.contact__bar span {
+  margin-right: 40px;
+}
+
+.contact h1 {
+  margin-left: 100px;
+  font-size: 2.5em;
+  color: #fff;
+}
+/* media queries for Contact Section */
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__bar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact__bar img {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .contact__bar p {
+    margin-right: 16px;
+  }
+
+  .contact__bar span {
+    font-size: 1em;
+  }
+
+  .contact h1 {
+    margin-left: 0;
+    margin-top: 32px;
+    font-size: 2em;
+  }
+}
+/* Footer Section */
+.footer {
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: #fff;
+}
+
+.footer__container {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__left h2 {
+  margin-bottom: 24px;
+}
+
+.footer__left p {
+  line-height: 2;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.footer__right a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* media queries for Footer */
+@media screen and (max-width: 1000px) {
+  .footer__container {
+    padding: 60px 24px;
+  }
+
+  .footer__right {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .footer__right {
+    padding: 0 16px;
   }
 }
