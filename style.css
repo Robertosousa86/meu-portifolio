@@ -5,6 +5,7 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Hero Section */
 .hero__section {
   background-image: linear-gradient(to right, #2193b0, #6dd5ed);
@@ -26,7 +27,7 @@
 }
 
 .column__left h1 {
-  font-size: 5.565em;
+  font-size: 4em;
 }
 
 .column__left p {
@@ -44,6 +45,7 @@
   width: 100%;
   height: 100%;
 }
+
 /* media query for Hero Section */
 @media screen and (max-width: 1100px) {
   .hero__section {
@@ -68,6 +70,7 @@
     font-size: 32px;
   } */
 }
+
 /* Main Section */
 .main__section {
   padding: 60px 60px;
@@ -101,13 +104,15 @@
 }
 
 .main__text h2 {
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5;
   margin-bottom: 32px;
+  text-align: left;
 }
 
 .main__text p {
   line-height: 2.3;
+  font-size: 1.1em;
 }
 
 .main__image {
@@ -119,6 +124,7 @@
   width: 420px;
   height: 610px;
 }
+
 /* media queries for Main Section */
 @media screen and (max-width: 1000px) {
   .main__section {
@@ -154,6 +160,7 @@
     border-radius: 5%;
   }
 }
+
 /* Services Section */
 .services {
   background-image: linear-gradient(to right, #2193b0, #6dd5ed);
@@ -209,6 +216,12 @@
   line-height: 2;
 }
 
+.services__des p a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .macbook {
   height: 700px;
   width: 100%;
@@ -236,6 +249,7 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
 /* Media queries for Services Section */
 @media screen and (max-width: 786px) {
   .services__grid {
@@ -276,6 +290,7 @@
   .services__content {
     margin-top: 40px;
   }
+
   .services__content img {
     margin-right: 16px;
   }
@@ -288,6 +303,7 @@
     margin-right: 20px;
   }
 }
+
 /* Portiflio Section */
 .portifolio {
   background-image: linear-gradient(to right, #2193b0, #6dd5ed);
@@ -301,7 +317,7 @@
 }
 
 .portifolio__container h1 {
-  font-size: 7em;
+  font-size: 6em;
   color: #fff;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -350,6 +366,7 @@
   width: 100%;
   height: 100%;
 }
+
 /* media queries for Portifolio Section */
 @media screen and (max-width: 1386px) {
   .portifolio__projects {
@@ -383,10 +400,12 @@
   .portifolio {
     padding: 10px;
   }
+
   .portifolio__container h1 {
     font-size: 2.5em;
   }
 }
+
 /* Contact Section */
 .contact {
   display: flex;
@@ -423,6 +442,7 @@
   font-size: 2.5em;
   color: #fff;
 }
+
 /* media queries for Contact Section */
 @media screen and (max-width: 768px) {
   .contact {
@@ -453,6 +473,7 @@
     font-size: 2em;
   }
 }
+
 /* Footer Section */
 .footer {
   background-image: linear-gradient(to right, #2193b0, #6dd5ed);
@@ -471,17 +492,15 @@
 }
 
 .footer__left h2 {
-  margin-bottom: 24px;
-}
-
-.footer__left p {
-  line-height: 2;
+  font-size: 3em;
+  margin-top: 7px;
+  white-space: nowrap;
 }
 
 .footer__right {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 200px;
 }
 
 .footer__right a {
@@ -490,6 +509,14 @@
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.social__icon--link {
+  color: #fff;
+  font-size: 2.5em;
+  padding: 10px 10px;
+  display: inline;
+}
+
 /* media queries for Footer */
 @media screen and (max-width: 1000px) {
   .footer__container {
@@ -498,11 +525,27 @@
 
   .footer__right {
     flex-direction: column;
+    display: inline;
+  }
+
+  .social__icon--link {
+    font-size: 1.5em;
   }
 }
 
 @media screen and (max-width: 468px) {
   .footer__right {
-    padding: 0 16px;
+    padding: 0 0 20px;
+    display: inline;
+  }
+
+  .social__icon--link {
+    font-size: 1.5em;
+  }
+
+  .footer__left h2 {
+    margin-top: 0px;
+    font-size: 1.5em;
+    margin-right: 15px;
   }
 }
